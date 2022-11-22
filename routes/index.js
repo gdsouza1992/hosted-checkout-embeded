@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Embeded hosted checkout' });
 });
 
+router.get('/no-allow-payment', function(req, res, next) {
+  res.render('no-allow-payment', { title: 'Embeded hosted checkout' });
+});
+
+
 module.exports = router;
